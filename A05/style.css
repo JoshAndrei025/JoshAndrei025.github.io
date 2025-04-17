@@ -1,0 +1,21 @@
+.banner {
+    background-color: white;
+    color: green;
+    font-size: 80px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 10px solid;
+}
+
+.content {
+    margin: 30px;
+    background-color: white;
+    color: green;
+    font-style: italic;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid;
+}
+
