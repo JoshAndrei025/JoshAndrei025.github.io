@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .btn-outline-black {
+            color: black;
+            border: 2px solid black;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+
+        .fixed-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: #F3F0FF;">
+    <div class="container-fluid p-5 mb-3" style="background-color:#67666f; color: white">
+        <div class="h3 text-center">
+            Sponty Nature Trip
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row" id="container-row-1"></div>
+    </div>
+
+    <div class="container-fluid p-5 mb-3" style="background-color: #67666f; color: white">
+        <div class="h3 text-center">
+            Nowhere To Go
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row" id="container-row-2"></div>
+    </div>
+
+    <script>
+        var titles1 = ["Boodle Fight?", "When ulet?", "Sponty Nature Trip", "Biglaang Yayaan",];
+        var pictures1 = ["trip1.jpg", "trip2.jpg", "trip3.jpg", "trip4.jpg"];
+
+        var titles2 = ["Eton City", "8 hours Vacant?", "Planned Trip", "Planned Trip with sir", "Tambayannnn", "Budol Place", "Sunset Place", "UPLBBBBBBB"];
+        var pictures2 = ["Eton City.jpg", "PicnicGrove.jpg", "People'sPark.jpg", "SVD.jpg", "NU.jpg", "Acienda.jpg", "Banadero.jpg", "UPLB.jpg"];
+
+        var row1 = document.getElementById("container-row-1");
+        var row2 = document.getElementById("container-row-2");
+
+        for (var i = 0; i < titles1.length; i++) {
+            row1.innerHTML +=
+                '<div class="col-12 col-sm-6 col-md-4 col-lg-3">' +
+                '<div class="card my-3 shadow rounded overflow-hidden border-0">' +
+                '<div class="zoom-container">' +
+                '<img src="img/' + pictures1[i] + '" class="card-img-top zoom-img fixed-img" alt="Image">' +
+                '</div>' +
+                '<div class="card-body">' +
+                '<h5 class="card-title">' + titles1[i] + '</h5>' +
+                '<a href="#" class="btn btn-outline-black rounded-pill mt-3"' +
+                ' onmouseover="inquireMouseEnter(this)"' +
+                ' onmouseout="inquireMouseLeave(this)"' +
+                ' target="_blank">View Image</a>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+        }
+
+        for (var i = 0; i < titles2.length; i++) {
+            row2.innerHTML +=
+                '<div class="col-12 col-sm-6 col-md-4 col-lg-3">' +
+                '<div class="card my-3 shadow rounded overflow-hidden border-0">' +
+                '<div class="zoom-container">' +
+                '<img src="img/' + pictures2[i] + '" class="card-img-top zoom-img fixed-img" alt="Image">' +
+                '</div>' +
+                '<div class="card-body">' +
+                '<h5 class="card-title">' + titles2[i] + '</h5>' +
+                '<a href="#" class="btn btn-outline-black rounded-pill mt-3"' +
+                ' onmouseover="inquireMouseEnter(this)"' +
+                ' onmouseout="inquireMouseLeave(this)"' +
+                ' target="_blank">View Image</a>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+        }
+    </script>
+
+    <script>
+        function inquireMouseEnter(button) {
+            button.style.backgroundColor = "black";
+            button.style.color = "white";
+            button.classList.add("shadow");
+        }
+
+        function inquireMouseLeave(button) {
+            button.style.backgroundColor = "transparent";
+            button.style.color = "black";
+            button.classList.remove("shadow");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

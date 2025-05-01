@@ -4,160 +4,93 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Fall for You</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <style>
-        .banner {
-            background-color: darkgray;
-            color: #5b5b66;
-            font-size: 80px;
-            font-family: sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-
-        body {
-            background-color: #5b5b66;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        .card img {
-            object-fit: cover;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto;
-        }
-
-        .card-body {
-            text-align: center;
-        }
-
-        .card-body h5 {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .card-body p {
-            font-size: 1rem;
-            color: #555;
-            margin-top: 10px;
-        }
-
-        .card-body a {
-            margin-top: 15px;
-        }
-
-        .container-fluid {
-            padding: 40px 0;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
-        }
-
-        @media (max-width: 768px) {
-            .container-fluid {
-                padding: 20px;
-            }
-
-            .header h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="banner">FallForYou</div>
+<body data-bs-them="dark">
+    <div class="banner-fluid py-3">
+        <h1 class="mx-3 fw-bold">Fall for you</h1>
+    </div>
 
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g4">
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="styles/facebook.png" alt="Social Media Icon">
-                    <div class="card-body">
-                        <h5 class="card-title">Facebook</h5>
-                        <p class="card-text">Connect with me on Facebook for updates and more.</p>
-                        <a href="https://www.facebook.com/joshandrei.paragas.7" class="btn btn-primary">Visit Facebook</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col d-flex justify-content-center align-items-center">
-                <div class="text-center">
-                    <img src="styles/pfp1.jpg" alt="Josh Andrei L. Paragas" class="img-fluid rounded-circle mb-3">
-                    <h5>Josh Andrei L. Paragas</h5>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="styles/ig.webp" alt="Social Media Icon">
-                    <div class="card-body">
-                        <h5 class="card-title">Instagram</h5>
-                        <p class="card-text">Check out my Instagram account.</p>
-                        <a href="https://www.instagram.com/drei_prgs/" class="btn btn-primary">Visit Instagram</a>
-                    </div>
+    <div class="profile container my-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="img/pfp1.jpg" alt="Profile Picture">
                 </div>
             </div>
         </div>
 
-        <!-- Placeholder for Projects -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g4 mt-5">
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="styles/Teslalogo.png" alt="Project Image">
-                    <div class="card-body">
-                        <h5 class="card-title">A04</h5>
-                        <p class="card-text">Showcase of product</p>
-                        <a href="A04/index.html" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
+        <h2 class="mb-4">Josh Andrei Paragas</h2>
+
+        <div class="row justify-content-center text-center">
+            <div class="col-6 col-sm-4 col-md-3 mb-2">
+                <a href="https://www.facebook.com/joshandrei.paragas.7">
+                    <button type="button" class="btn btn-outline-primary w-100">Facebook</button>
+                </a>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="styles/TagaytayCity.jpg" alt="Project Image">
-                    <div class="card-body">
-                        <h5 class="card-title">A05</h5>
-                        <p class="card-text">Tourist Spots in Tagaytay City.</p>
-                        <a href="A05/index.html" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="styles/AI.gif" alt="Project Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">Brief description of the project.</p>
-                        <a href="#" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-2">
+                <a href="https://github.com/JoshAndrei025/JoshAndrei025.github.io.git">
+                    <button type="button" class="btn btn-primary w-100">GitHub</button>
+                </a>
             </div>
         </div>
     </div>
+    <div class="container-projects mx-3 mb-3">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card project-card" style="width: 100;">
+                    <img src="..." class="card-img-top project-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Actvity 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card project-card" style="width: 100;">
+                    <img src="..." class="card-img-top project-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Activity 5</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- +1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card project-card" style="width: 100;">
+                    <img src="..." class="card-img-top project-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Activity 6</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Disabled -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card project-card" style="width: 100;">
+                    <img src="..." class="card-img-top project-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card is Under Construction.</h5>
+                        <p class="card-text">More Activities Soon!</p>
+                        <a href="#" class="btn btn-secondary disabled">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
